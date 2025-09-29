@@ -8,7 +8,7 @@ To balance this, enemies will perform their Actions much more often than the pla
 
 ---
 ## Actions
-![showcase](./gifs/Actions.gif)  
+<img src="./gifs/Actions.gif" width="75%" height="75%"/>  
 There are two main Actions that are performed in this project and in the original game this is based on. These Actions are the Move Action and the Attack Action.  
 Actions can be placed in any order and can be repeated as many times as desired.
 
@@ -28,10 +28,13 @@ There are a few parts to the Move Action:
 - Push: This determines if whatever node the character walks on has its characters pushed away or not.
 - Push Damage: This deals an amount of damage to whatever has been pushed.  
 
-![showcase](./gifs/MoveAny.gif)  
-Here is an showcase of how a Move Action with the Target & Direction set to Any works in-game.
+<br/>
 
-[showcase the move left and explain what's happening]
+*Here is a showcase of how a Move Action with the Target & Direction set to Any works in-game.*  
+<img src="./gifs/MoveAny.gif" width="50%" height="50%"/>  
+
+*Here is a showcase of how a Move Action with the Target set to Nearest & Direction set to Left works in-game.*  
+<img src="./gifs/MoveLeft.gif" width="50%" height="50%"/>  
 
 ### Attack Action
 There are a few parts to the Attack Action:
