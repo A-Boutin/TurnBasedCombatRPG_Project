@@ -1,9 +1,9 @@
 # Turn-Based Combat RPG Project
-Taking heavy inspiration from the mechanics of Dark Souls: The Board Game, this is project attempts to create a modular system for enemy and player design alike. 
+Taking heavy inspiration from the mechanics of Dark Souls: The Board Game, this is project attempts to create a modular system for enemy and player design alike that is also easily portable to a mobile game. 
 
-Enemies and players are both given "Actions" which tells them the way they are allowed to move and attack on the board. 
-An enemy will always have the same Action and therefore always perform their turn in a predictable way. This allows for players to strategize how they would like to spend their own turn. 
-Players can get Weapons which will have their own Actions attached to them. Most weapons will have multiple Actions that can be taken for different costs to the player. Players that are out of combat can change Weapons, effectively changing their Actions, as much as they'd like before entering combat again. 
+Enemies and players are both given "Actions" which tells them the way they are allowed to move and attack on the board.  
+An enemy will always have the same Action and therefore always perform their turn in a predictable way. This allows for players to strategize how they would like to spend their own turn.  
+Players can get Weapons which will have their own Actions attached to them. Most weapons will have multiple Actions that can be taken for different costs to the player. Players that are out of combat can change Weapons, effectively changing their Actions, as much as they'd like before entering combat again.  
 To balance this, enemies will perform their Actions much more often than the player.
 
 ---
