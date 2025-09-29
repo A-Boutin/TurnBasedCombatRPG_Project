@@ -54,7 +54,7 @@ When combined, these parts create a flexible attack system where one attack can 
 The character (shown as a Green Square) is the one that has the defined Action.  
 The opposing character (shown as a Red Triangle) only has a Move Action that allows them to move once in any direction.
 <br/>
-<img src="./images/MoveAction.png" width="75%" height="75%"/>  
+<img src="./images/MoveAction.png" width="75%" height="50%"/>  
 The move action described makes them move forward towards the nearest target (the Red Triangle) by 1 node (valid nodes highlighted in Yellow).  
-<img src="./images/AttackAction.png" width="75%" height="75%"/>  
+<img src="./images/AttackAction.png" width="75%" height="50%"/>  
 The attack action described makes them attack the nearest target node (AOE), within a range (valid nodes highlighted in Yellow) of 0 (standing on the same node), dealing a Black die (random aspeect) of damage plus 1.
