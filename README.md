@@ -47,6 +47,10 @@ There are a few parts to the Attack Action:
 - Push: If this box is checked, this attack will also move the target 1 node away from the attacker.
 When combined, these parts create a flexible attack system where one attack can differ greatly from another.
 
+<br/>
+
+*Here is a showcase of the Action created at the start of this section*
+<img src="./gifs/ActionsInUse.gif" width="75%" height="75%"/>  
 [showcase the action in use and explain what's happening]
 [picture of the move action described]
 [picture of the attack action described]
