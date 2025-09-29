@@ -13,13 +13,30 @@ There are two main Actions that are performed in this project and in the origina
 Actions can be placed in any order and can be repeated as many times as desired.
 
 ### Move Action
-[showcase the move any and explain what's happening]
+There are a few parts to the Move Action:
+- Target: This goes hand-in-hand with the Direction a character is going.
+  - Any: The character can move where I would like.
+  - Nearest: The character can move in the chosen Direction dependent on Nearest Target.
+  - Aggro: The character can move in the chosen Direction dependent on the Aggro'd Target.
+- Direction: This defined the Direction you are allowed to move in.
+  - Any: The character can move in any direction they would like.
+  - Forward: The character can only move towards the Target.
+  - Backward: The character can only move away from the Target.
+  - Left: The character can only move left of the Target.
+  - Right: The character can only move right of the Target.
+- Move Amount: This determines the amount of spaces the character can move.
+- Push: This determines if whatever node the character walks on has its characters pushed away or not.
+- Push Damage: This deals an amount of damage to whatever has been pushed.  
+
+![showcase](./gifs/MoveAny.gif)  
+Here is an showcase of how a Move Action with the Target & Direction set to Any works in-game.
+
 [showcase the move left and explain what's happening]
 
 ### Attack Action
 There are a few parts to the Attack Action:
-- Target: This holds the same definition as that of the Move Action.
-- Dmg Set (Damage Set): This is a list of Dice (for randomness) & a modifier (for concrete) to determine to amount of damage to be dealt.
+- Target: This holds the same definition as that of the Move Action except this one is for attacking the Target.
+- Dmg Set (Damage Set): This is a list of Dice (for random damage) & a modifier (for concrete damage) to determine to amount of total damage to be dealt.
 - Range: This determines how close, in terms of nodes, the target has to be in order to able to be hit
 - AOE (Area Of Effect): If this box is checked, the amount of damage dealt is dealt to everything in the node instead of just the a single target.
 - Shaft: If this box is checked, this attack cannot be performed on nodes with a range of 0 (usually the same node the attacker is on).
