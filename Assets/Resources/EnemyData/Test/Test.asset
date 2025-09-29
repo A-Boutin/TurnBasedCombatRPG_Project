@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c079f85a33552d4c851d0b5b8335dec, type: 3}
+  m_Name: Test
+  m_EditorClassIdentifier: 
+  enemyName: Test
+  health: 1
+  threatLevel: 1
+  range: 0
+  defense:
+    block:
+      dice:
+      - 9b13f9a1-e166-444a-b654-9fdbd75963b1
+      - 9b13f9a1-e166-444a-b654-9fdbd75963b1
+      modifier: 0
+    resist:
+      dice: []
+      modifier: 0
+    dodge:
+      dice: []
+      modifier: 0
+  behaviour:
+    actions:
+    - rid: 2153656890449461248
+    - rid: 2153656890449461249
+    repeats: 1
+  references:
+    version: 2
+    RefIds:
+    - rid: 2153656890449461248
+      type: {class: MoveAction, ns: , asm: Assembly-CSharp}
+      data:
+        target: 1
+        direction: 1
+        moveAmount: 1
+        push: 0
+        pushDamage: 0
+    - rid: 2153656890449461249
+      type: {class: AttackAction, ns: , asm: Assembly-CSharp}
+      data:
+        target: 1
+        dmgSet:
+          dice:
+          - 9b13f9a1-e166-444a-b654-9fdbd75963b1
+          modifier: 1
+        range: 0
+        AOE: 1
+        shaft: 0
+        magic: 0
+        push: 0

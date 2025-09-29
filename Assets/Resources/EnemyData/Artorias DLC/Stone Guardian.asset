@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c079f85a33552d4c851d0b5b8335dec, type: 3}
+  m_Name: Stone Guardian
+  m_EditorClassIdentifier: 
+  enemyName: Stone Guardian
+  health: 5
+  threatLevel: 6
+  range: 1
+  defense:
+    block:
+      dice: []
+      modifier: 2
+    resist:
+      dice: []
+      modifier: 3
+    dodge:
+      dice: []
+      modifier: 1
+  behaviour:
+    actions:
+    - rid: 5572412375926833193
+    - rid: 5572412375926833194
+    - rid: 5572412375926833195
+    - rid: 5572412375926833196
+    repeats: 1
+  references:
+    version: 2
+    RefIds:
+    - rid: 5572412375926833193
+      type: {class: MoveAction, ns: , asm: Assembly-CSharp}
+      data:
+        target: 2
+        direction: 1
+        moveAmount: 1
+    - rid: 5572412375926833194
+      type: {class: PushAction, ns: , asm: Assembly-CSharp}
+      data:
+        damage: 4
+    - rid: 5572412375926833195
+      type: {class: AttackAction, ns: , asm: Assembly-CSharp}
+      data:
+        target: 2
+        dmgSet:
+          dice: []
+          modifier: 5
+        range: 1
+        AOE: 1
+        shaft: 0
+        magic: 0
+    - rid: 5572412375926833196
+      type: {class: PushAction, ns: , asm: Assembly-CSharp}
+      data:
+        damage: 0

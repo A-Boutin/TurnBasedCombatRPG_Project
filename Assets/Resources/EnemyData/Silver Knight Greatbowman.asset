@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c079f85a33552d4c851d0b5b8335dec, type: 3}
+  m_Name: Silver Knight Greatbowman
+  m_EditorClassIdentifier: 
+  enemyName: Silver Knight Greatbowman
+  health: 1
+  threatLevel: 3
+  range: -1
+  defense:
+    block:
+      dice: []
+      modifier: 2
+    resist:
+      dice: []
+      modifier: 0
+    dodge:
+      dice: []
+      modifier: 1
+  behaviour:
+    actions:
+    - rid: 1100237576843296772
+    - rid: 1100237576843296773
+    repeats: 1
+  references:
+    version: 2
+    RefIds:
+    - rid: 1100237576843296772
+      type: {class: AttackAction, ns: , asm: Assembly-CSharp}
+      data:
+        target: 2
+        dmgSet:
+          dice: []
+          modifier: 4
+        range: 10
+        AOE: 1
+        shaft: 0
+        magic: 0
+        push: 0
+    - rid: 1100237576843296773
+      type: {class: MoveAction, ns: , asm: Assembly-CSharp}
+      data:
+        target: 2
+        direction: 2
+        moveAmount: 1
+        push: 0
+        pushDamage: 0

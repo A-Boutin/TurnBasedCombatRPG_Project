@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c079f85a33552d4c851d0b5b8335dec, type: 3}
+  m_Name: Mushroom Parent
+  m_EditorClassIdentifier: 
+  enemyName: Mushroom Parent
+  health: 10
+  threatLevel: 1
+  range: -1
+  defense:
+    block:
+      dice: []
+      modifier: 1
+    resist:
+      dice: []
+      modifier: 2
+    dodge:
+      dice: []
+      modifier: 1
+  behaviour:
+    actions:
+    - rid: 5572412375926833181
+    - rid: 5572412375926833182
+    - rid: 5572412375926833183
+    repeats: 1
+  references:
+    version: 2
+    RefIds:
+    - rid: 5572412375926833181
+      type: {class: MoveAction, ns: , asm: Assembly-CSharp}
+      data:
+        target: 1
+        direction: 1
+        moveAmount: 1
+    - rid: 5572412375926833182
+      type: {class: PushAction, ns: , asm: Assembly-CSharp}
+      data:
+        damage: 6
+    - rid: 5572412375926833183
+      type: {class: ConditionAction, ns: , asm: Assembly-CSharp}
+      data:
+        condition:
+          rid: 5572412375926833184
+    - rid: 5572412375926833184
+      type: {class: Stagger, ns: , asm: Assembly-CSharp}
+      data: 

@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c079f85a33552d4c851d0b5b8335dec, type: 3}
+  m_Name: Hollow Soldier
+  m_EditorClassIdentifier: 
+  enemyName: Hollow Soldier
+  health: 1
+  threatLevel: 5
+  range: 0
+  defense:
+    block:
+      dice: []
+      modifier: 1
+    resist:
+      dice: []
+      modifier: 1
+    dodge:
+      dice: []
+      modifier: 1
+  behaviour:
+    actions:
+    - rid: 1100237576843296778
+    - rid: 1100237576843296779
+    repeats: 1
+  references:
+    version: 2
+    RefIds:
+    - rid: 1100237576843296778
+      type: {class: MoveAction, ns: , asm: Assembly-CSharp}
+      data:
+        target: 1
+        direction: 1
+        moveAmount: 1
+        push: 0
+        pushDamage: 0
+    - rid: 1100237576843296779
+      type: {class: AttackAction, ns: , asm: Assembly-CSharp}
+      data:
+        target: 1
+        dmgSet:
+          dice: []
+          modifier: 4
+        range: 0
+        AOE: 0
+        shaft: 0
+        magic: 0
+        push: 0
