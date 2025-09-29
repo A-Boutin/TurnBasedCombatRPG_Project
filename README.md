@@ -8,7 +8,7 @@ To balance this, enemies will perform their Actions much more often than the pla
 
 ---
 ## Actions
-![showcase](.\gifs\Actions.gif)  
+![showcase](./gifs/Actions.gif)  
 There are two main Actions that are performed in this project and in the original game this is based on. These Actions are the Move Action and the Attack Action.  
 Actions can be placed in any order and can be repeated as many times as desired.
 
